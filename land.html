@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #0052cc;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .question {
+      background-color: #f0f0f0;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .answer {
+      display: none;
+      padding: 10px;
+    }
+
+    .answer.show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our Landing Page!</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Features</h2>
+      <ul>
+        <li class="question" onclick="toggleAnswer('answer1')">How does this feature work?</li>
+        <li id="answer1" class="answer">This feature works by...</li>
+        
+        <li class="question" onclick="toggleAnswer('answer2')">Can I customize this feature?</li>
+        <li id="answer2" class="answer">Yes, you can customize...</li>
+        
+        <li class="question" onclick="toggleAnswer('answer3')">What are the benefits of this feature?</li>
+        <li id="answer3" class="answer">The benefits include...</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Our Landing Page. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleAnswer(id) {
+      var answer = document.getElementById(id);
+      answer.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
