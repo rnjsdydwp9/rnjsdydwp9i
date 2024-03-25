@@ -42,10 +42,9 @@ export const Contact = (props) => {
           <div className="col-md-8">
             <div className="row">
               <div className="section-title">
-                <h2>Get In Touch</h2>
+                <h2>contact</h2>
                 <p>
-                  Please fill out the form below to send us an email and we will
-                  get back to you as soon as possible.
+                 양식에 맞춰 보내주시면 빠른 시일내에 연락드리겠습니다.
                 </p>
               </div>
               <form name="sentMessage" validate onSubmit={handleSubmit}>
@@ -153,7 +152,7 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2023 Issaaf Kattan React Land Page Template. Design by{" "}
+            &copy; 2024 오즈 코딩 스쿨 프론트엔드 1기 랜딩페이지 프로젝트{" "}
             <a href="http://www.templatewire.com" rel="nofollow">
               TemplateWire
             </a>
